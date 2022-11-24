@@ -1,4 +1,4 @@
-.container{
+.container1{
   background-color: #79b0e2;
 }
 input[type=text] {
@@ -9,5 +9,11 @@ input[type=text] {
 }
 
 .row{
-  margin: auto;
+  text-align: center;
+}
+.container2{
+  background-color: white;
+}
+.row2{
+  size: 10%;
 }
