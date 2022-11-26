@@ -1,20 +1,39 @@
-.container1{
+.blue-background {
   background-color: #79b0e2;
 }
-input[type=text] {
+
+.white-background {
+  background-color: white;
+}
+
+input[type="text"] {
   width: 5%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
 
-.row{
+.hint-input {
+  text-align: center;
+  display: inline-block;
+  width: 3em;
+  position: relative;
+  top: -4em;
+  line-height: 2em;
+}
+
+.hint-label {
+  text-align: center;
+  display: inline-block;
+  width: 3em;
+  margin-right: 0.5em;
+  padding-top: 2.5em;
+}
+
+.row {
   text-align: center;
 }
-.container2{
-  background-color: white;
-}
-.row2{
+.row2 {
   size: 10%;
 }
 .ten {
