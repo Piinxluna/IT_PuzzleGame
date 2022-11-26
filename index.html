@@ -13,27 +13,24 @@
 </head>
 
 <body>
-  <div class="container blue-background">
+  <div class="blue-background">
     <h1>คำตอบสุดท้าย</h1>
     <form action="#">
-      <div class="row">
+      <div class="row-row">
         <input type="text" value="S">
         <input type="text" value="y" />
         <input type="text" value="s" />
         <input type="text" value="t" />
         <input type="text" value="e" />
-        <input type="text" value="m.out.println(“ ”)" />
-        <input type="text" value="." />
+        <input type="text" value="m" />
+        <label class="space"></label>
         <input type="text" value="o" />
         <input type="text" value="u" />
         <input type="text" value="t" />
-        <input type="text" value="." />
         <input type="text" value="l" />
         <input type="text" value="n" />
       </div>
-      <div class="row">
-        <input type="text" value="(" />
-        <input type="text" value="“" />
+      <div class="row-row">
         <input type="text" value="H" />
         <input type="text" value="e" />
         <input type="text" value="l" />
@@ -44,8 +41,7 @@
         <input type="text" value="r" />
         <input type="text" value="l" />
         <input type="text" value="d" />
-        <input type="text" value="”" />
-        <input type="text" value=")" />
+        <div></div>
       </div>
       <div class="row">
         <input type="button" value="คัดลอกคำตอบ">
@@ -56,17 +52,6 @@
 
 
   <div class="container white-background">
-    <!-- <div class="container white-background">
-    <div class="row2">
-      <p>ระบบตัวเลขที่ประกอบด้วย 2 ค่าคือ 0 และ 1 ซึ่งใช้ในการคำนวณในระบบคอมพิวเตอร์</p>
-      <input type="text" value="B" />
-      <input type="text" value="I" />
-      <input type="text" value="N" />
-      <input type="text" value="A" />
-      <input type="text" value="R" />
-      <input type="text" value="Y" />
-      <p class="ten">10</p>
-    </div> -->
     <fieldset class="row2">
       <p>ระบบตัวเลขที่ประกอบด้วย 2 ค่าคือ 0 และ 1 ซึ่งใช้ในการคำนวณในระบบคอมพิวเตอร์</p>
       <form id="hint1" class="ms-4">
@@ -78,190 +63,234 @@
         <label class="hint-label">2 <input class="hint-input" value="Y" /></label>
       </form>
     </fieldset>
-    <div class="row2">
+
+    <fieldset class="row2">
       <p>เช่น Monitor, Printer, Headphones, Speakers, Projector, GPS,
         Speech-Generating Device</p>
-      <input type="text" value="O" />
-      <input type="text" value="U" />
-      <input type="text" value="T" />
-      <input type="text" value="P" />
-      <input type="text" value="U" />
-      <input type="text" value="T" />
+      <form id="hint2" class="ms-4">
+        <label class="hint-label">6<input class="hint-input" value="O" /></label>
+        <label class="hint-label">8<input class="hint-input" value="U" /></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">7<input class="hint-input" value="P" /></label>
+        <label class="hint-label">8<input class="hint-input" value="U" /></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
     </div>
-    <div class="row2">
+    </form>
+  </fieldset>
+
+    <fieldset class="row2">
       <p>การปกป้องระบบคอมพิวเตอร์, เครือข่าย network หรือโปรแกรมจากการโจมตีทาง digital เช่น
         การขโมยข้อมูล, การก่อกวนการทำงานของระบบ, การทำลายข้อมูล เป็นต้น</p>
-      <input type="text" value="C" />
-      <input type="text" value="Y" />
-      <input type="text" value="B" />
-      <input type="text" value="E" />
-      <input type="text" value="R" />
-      <input type="text" value="S" />
-      <input type="text" value="E" />
-      <input type="text" value="C" />
-      <input type="text" value="U" />
-      <input type="text" value="R" />
-      <input type="text" value="I" />
-      <input type="text" value="T" />
-      <input type="text" value="Y" />
-    </div>
-    <div class="row2">
+        <form id="hint3" class="ms-4">
+        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
+        <label class="hint-label">2<input class="hint-input" value="Y" /></label>
+        <label class="hint-label"><input class="hint-input" value="B" disabled/></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">1<input class="hint-input" value="S" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
+        <label class="hint-label">7<input class="hint-input" value="U" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">2<input class="hint-input" value="Y" /></label>
+        </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>ประเภทข้อมูลประเภทข้อความหรือการนำตัวอักษรหลายๆ ตัวมาต่อกันหรือเรียกว่าอาเรย์ของตัวอักษร</p>
-      <input type="text" value="S" />
-      <input type="text" value="T" />
-      <input type="text" value="R" />
-      <input type="text" value="I" />
-      <input type="text" value="N" />
-      <input type="text" value="G" />
-    </div>
-    <div class="row2">
+      <form id="hint4" class="ms-4">
+        <label class="hint-label">1<input class="hint-input" value="S" /></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label">11<input class="hint-input" value="N" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>ข้อมูลประเภท Boolean ประกอบด้วย 2 ค่าคือ ____ และ False</p>
-      <input type="text" value="T" />
-      <input type="text" value="R" />
-      <input type="text" value="U" />
-      <input type="text" value="E" />
-    </div>
-    <div class="row2">
+      <form id="hint5" class="ms-4">
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">7<input class="hint-input" value="U" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>ลึกลับ, ยากหรือเป็นไปไม่ได้ที่อธิบาย</p>
-      <input type="text" value="M" />
-      <input type="text" value="Y" />
-      <input type="text" value="S" />
-      <input type="text" value="T" />
-      <input type="text" value="E" />
-      <input type="text" value="R" />
-      <input type="text" value="I" />
-      <input type="text" value="O" />
-      <input type="text" value="U" />
-      <input type="text" value="S" />
-    </div>
-    <div class="row2">
+      <form id="hint6" class="ms-4">
+        <label class="hint-label">5<input class="hint-input" value="M" /></label>
+        <label class="hint-label">2<input class="hint-input" value="Y" /></label>
+        <label class="hint-label">1<input class="hint-input" value="S" /></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label">6<input class="hint-input" value="O" /></label>
+        <label class="hint-label">7<input class="hint-input" value="U" /></label>
+        <label class="hint-label">1<input class="hint-input" value="S" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>คนที่ปลอมเป็นคนอื่น, นักต้มตุ๋น</p>
-      <input type="text" value="I" />
-      <input type="text" value="M" />
-      <input type="text" value="P" />
-      <input type="text" value="O" />
-      <input type="text" value="S" />
-      <input type="text" value="T" />
-      <input type="text" value="E" />
-      <input type="text" value="R" />
-    </div>
-    <div class="row2">
+      <form id="hint7" class="ms-4">
+        <label class="hint-label">4<input class="hint-input" value="I" /></label>
+        <label class="hint-label">5<input class="hint-input" value="M" /></label>
+        <label class="hint-label">6<input class="hint-input" value="P" /></label>
+        <label class="hint-label">8<input class="hint-input" value="O" /></label>
+        <label class="hint-label">1<input class="hint-input" value="S" /></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>การขีดเส้นใต้ข้อความที่เลือก</p>
-      <input type="text" value="C" />
-      <input type="text" value="T" />
-      <input type="text" value="R" />
-      <input type="text" value="L" />
-      <input type="text" value="+" />
-      <input type="text" value="U" />
-    </div>
-    <div class="row2">
+      <form id="hint8" class="ms-4">
+        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">12<input class="hint-input" value="L" /></label>
+        <label class="hint-label"><input class="hint-input" value="+" disabled/></label>
+        <label class="hint-label">7<input class="hint-input" value="U" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>บุคคลที่ทำหน้าที่เขียนซอฟต์แวร์ต่างๆ (Software) หรือเขียนโปรแกรมเพื่อสั่งงานให้เครื่องคอมพิวเตอร์
         ทำงานตามความต้องการของผู้ใช้ โดยเขียนตามแผนผังที่นักวิเคราะห์ระบบได้เขียนไว้</p>
-      <input type="text" value="P" />
-      <input type="text" value="R" />
-      <input type="text" value="O" />
-      <input type="text" value="G" />
-      <input type="text" value="R" />
-      <input type="text" value="A" />
-      <input type="text" value="M" />
-      <input type="text" value="M" />
-      <input type="text" value="E" />
-      <input type="text" value="R" />
-    </div>
-    <div class="row2">
+      <form id="hint9" class="ms-4">
+        <label class="hint-label">8<input class="hint-input" value="P" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">6<input class="hint-input" value="O" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
+        <label class="hint-label">5<input class="hint-input" value="M" /></label>
+        <label class="hint-label">5<input class="hint-input" value="M" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>ที่อยู่ของเว็บไซต์, จะเริ่มด้วยการพิมพ์คำหน้า www. และจบด้วย .com</p>
-      <input type="text" value="U" />
-      <input type="text" value="R" />
-      <input type="text" value="L" />
-    </div>
-    <div class="row2">
+      <form id="hint10" class="ms-4">
+        <label class="hint-label">7<input class="hint-input" value="U" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">12<input class="hint-input" value="L" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>หรือ ผังงาน เป็นเครื่องมือแสดงขั้นตอน หรือกระบวนการทำงานที่กระชับ เข้าใจง่าย</p>
-      <input type="text" value="F" />
-      <input type="text" value="L" />
-      <input type="text" value="O" />
-      <input type="text" value="W" />
-      <input type="text" value="C" />
-      <input type="text" value="H" />
-      <input type="text" value="A" />
-      <input type="text" value="R" />
-      <input type="text" value="T" />
-    </div>
-    <div class="row2">
+      <form id="hint11" class="ms-4">
+        <label class="hint-label"><input class="hint-input" value="F" disabled/></label>
+        <label class="hint-label">12<input class="hint-input" value="L" /></label>
+        <label class="hint-label">6<input class="hint-input" value="O" /></label>
+        <label class="hint-label">14<input class="hint-input" value="W" /></label>
+        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
+        <label class="hint-label">13<input class="hint-input" value="H" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">2<input class="hint-input" value="T" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>เอกเทคโนโลยีสารสนเทศ</p>
-      <input type="text" value="I" />
-      <input type="text" value="N" />
-      <input type="text" value="F" />
-      <input type="text" value="R" />
-      <input type="text" value="O" />
-      <input type="text" value="M" />
-      <input type="text" value="A" />
-      <input type="text" value="T" />
-      <input type="text" value="I" />
-      <input type="text" value="O" />
-      <input type="text" value="N" />
-      <input type="text" value="T" />
-      <input type="text" value="E" />
-      <input type="text" value="C" />
-      <input type="text" value="H" />
-      <input type="text" value="N" />
-      <input type="text" value="O" />
-      <input type="text" value="L" />
-      <input type="text" value="O" />
-      <input type="text" value="G" />
-      <input type="text" value="Y" />
-    </div>
-    <div class="row2">
+      <form id="hint12" class="ms-4">
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label">11<input class="hint-input" value="N" /></label>
+        <label class="hint-label"><input class="hint-input" value="F" disabled/></label>
+        <label class="hint-label">6<input class="hint-input" value="R" /></label>
+        <label class="hint-label">9<input class="hint-input" value="O" /></label>
+        <label class="hint-label">5<input class="hint-input" value="M" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label">6<input class="hint-input" value="O" /></label>
+        <label class="hint-label">11<input class="hint-input" value="N" /></label>
+        <div></div>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
+        <label class="hint-label">13<input class="hint-input" value="H" /></label>
+        <label class="hint-label">11<input class="hint-input" value="N" /></label>
+        <label class="hint-label">6<input class="hint-input" value="O" /></label>
+        <label class="hint-label">12<input class="hint-input" value="L" /></label>
+        <label class="hint-label">6<input class="hint-input" value="O" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
+        <label class="hint-label">2<input class="hint-input" value="Y" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>เอกวิศวกรรมดิจิทัล</p>
-      <input type="text" value="D" />
-      <input type="text" value="I" />
-      <input type="text" value="G" />
-      <input type="text" value="I" />
-      <input type="text" value="T" />
-      <input type="text" value="A" />
-      <input type="text" value="T" />
-      <input type="text" value="I" />
-      <input type="text" value="O" />
-      <input type="text" value="N" />
-      <input type="text" value="E" />
-      <input type="text" value="N" />
-      <input type="text" value="G" />
-      <input type="text" value="I" />
-      <input type="text" value="N" />
-      <input type="text" value="E" />
-      <input type="text" value="E" />
-      <input type="text" value="R" />
-      <input type="text" value="I" />
-      <input type="text" value="N" />
-      <input type="text" value="G" />
-    </div>
-    <div class="row2">
+      <form id="hint13" class="ms-4">
+        <label class="hint-label">15<input class="hint-input" value="D" /></label>
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
+        <label class="hint-label">12<input class="hint-input" value="L" /></label>
+        <div></div>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">11<input class="hint-input" value="N" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label">11<input class="hint-input" value="N" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label">11<input class="hint-input" value="N" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>ซอฟต์แวร์เพื่อการสื่อสาร ประชุม พูดคุย ติดต่อกัน (ซอฟต์แวร์ที่เด็กปสม.ใช้เรียนออนไลน์)</p>
-      <input type="text" value="M" />
-      <input type="text" value="I" />
-      <input type="text" value="C" />
-      <input type="text" value="R" />
-      <input type="text" value="O" />
-      <input type="text" value="S" />
-      <input type="text" value="O" />
-      <input type="text" value="F" />
-      <input type="text" value="T" />
-      <input type="text" value="T" />
-      <input type="text" value="E" />
-      <input type="text" value="A" />
-      <input type="text" value="M" />
-      <input type="text" value="S" />
-    </div>
-    <div class="row2">
+      <form id="hint14" class="ms-4">
+      <label class="hint-label">5<input class="hint-input" value="M" /></label>
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">6<input class="hint-input" value="O" /></label>
+        <label class="hint-label">1<input class="hint-input" value="S" /></label>
+        <label class="hint-label">6<input class="hint-input" value="O" /></label>
+        <label class="hint-label"><input class="hint-input" value="F" disabled/></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <div></div>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
+        <label class="hint-label">1<input class="hint-input" value="M" /></label>
+        <label class="hint-label">5<input class="hint-input" value="S" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="row2">
       <p>เครือข่ายคอมพิวเตอร์ที่มีขนาดใหญ่ที่สุด</p>
-      <input type="text" value="I" />
-      <input type="text" value="N" />
-      <input type="text" value="T" />
-      <input type="text" value="E" />
-      <input type="text" value="R" />
-      <input type="text" value="N" />
-      <input type="text" value="E" />
-      <input type="text" value="T" />
-    </div>
+      <form id="hint15" class="ms-4">
+        <label class="hint-label">10<input class="hint-input" value="I" /></label>
+        <label class="hint-label">11<input class="hint-input" value="N" /></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">11<input class="hint-input" value="N" /></label>
+        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+      </form>
+    </fieldset>
+
   </div>
 
   <!-- <div class="help">วิธีเล่น (ปกติจะซ่อนไว้)</div>
