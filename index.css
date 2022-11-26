@@ -29,14 +29,17 @@ input[type="text"] {
   margin-right: 0.5em;
   padding-top: 2.5em;
 }
-
-.row {
-  text-align: center;
-}
 .row2 {
   size: 10%;
+  text-align: center;
 }
 .ten {
   margin-left: 6.5%;
   margin-top: 0%;
+}
+.space {
+  width: 70px;
+}
+.row-row {
+  text-align: center;
 }
