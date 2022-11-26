@@ -1,4 +1,4 @@
-.container{
+.container1{
   background-color: #79b0e2;
 }
 input[type=text] {
@@ -6,4 +6,18 @@ input[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+
+.row{
+  text-align: center;
+}
+.container2{
+  background-color: white;
+}
+.row2{
+  size: 10%;
+}
+.ten {
+  margin-left: 6.5%;
+  margin-top: 0%;
 }
