@@ -1,9 +1,51 @@
-.container{
+.blue-background {
   background-color: #79b0e2;
 }
-input[type=text] {
+
+.white-background {
+  background-color: white;
+}
+
+input[type="text"] {
   width: 5%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+
+.tutorial-button {
+  cursor: pointer;
+}
+
+.tutorail-block {
+  background-color: aquamarine;
+  display: none;
+}
+
+.hint-input {
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  width: 3em;
+  position: relative;
+  top: -4em;
+  line-height: 2em;
+}
+
+.hint-label {
+  text-align: center;
+  display: inline-block;
+  width: 3em;
+  margin-right: 0.5em;
+  padding-top: 2.5em;
+}
+.row2 {
+  size: 10%;
+  text-align: center;
+}
+.space {
+  width: 60px;
+}
+.row-row {
+  text-align: center;
 }
