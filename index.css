@@ -13,7 +13,17 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
+.tutorial-button {
+  cursor: pointer;
+}
+
+.tutorail-block {
+  background-color: aquamarine;
+  display: none;
+}
+
 .hint-input {
+  text-transform: uppercase;
   text-align: center;
   display: inline-block;
   width: 3em;
@@ -32,10 +42,6 @@ input[type="text"] {
 .row2 {
   size: 10%;
   text-align: center;
-}
-.ten {
-  margin-left: 6.5%;
-  margin-top: 0%;
 }
 .space {
   width: 70px;
