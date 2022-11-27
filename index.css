@@ -23,6 +23,7 @@ input[type="text"] {
 }
 
 .hint-input {
+  text-transform: uppercase;
   text-align: center;
   display: inline-block;
   width: 3em;
