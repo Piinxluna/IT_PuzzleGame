@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
 .blue-background {
   background-color: #79b0e2;
 }
@@ -13,6 +20,12 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
+.ans-block {
+  padding-top: 2em;
+  text-align: center;
+  justify-content: center;
+}
+
 .tutorial-button {
   cursor: pointer;
 }
@@ -23,6 +36,7 @@ input[type="text"] {
 }
 
 .hint-input {
+  border-radius: 0.5rem;
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
@@ -38,14 +52,4 @@ input[type="text"] {
   width: 3em;
   margin-right: 0.5em;
   padding-top: 2.5em;
-}
-.row2 {
-  size: 10%;
-  text-align: center;
-}
-.space {
-  width: 60px;
-}
-.row-row {
-  text-align: center;
 }
