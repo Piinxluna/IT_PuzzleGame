@@ -2,800 +2,491 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <script src="./index.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>IT Puzzle Game</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>IT Puzzle Game</title>
 </head>
 
 <body>
-<<<<<<< HEAD
-  <div class="blue-background">
-    <h1>คำตอบสุดท้าย</h1>
-    <form action="#">
-      <div class="row-row">
-        <label class="col-xl-4 col-m-12">
-          <div class="image-fluid w-100 mb-3">
-            <label class="hint-label">1<input class="hint-input" value="S" /></label>
-            <label class="hint-label">2 <input class="hint-input" value="Y" /></label>
-            <label class="hint-label">1 <input class="hint-input" value="S" /></label>
-            <label class="hint-label">3<input class="hint-input" value="T" /></label>
-            <label class="hint-label">4 <input class="hint-input" value="E" /></label>
-            <label class="hint-label">5 <input class="hint-input" value="M" /></label>
-          </label>
-            <label class="space"></label>
-          <label class="col-xl-4 col-m-12">
-            <label class="hint-label">6<input class="hint-input" value="O" /></label>
-            <label class="hint-label">7 <input class="hint-input" value="U" /></label>
-            <label class="hint-label">3 <input class="hint-input" value="T" /></label>
-         </label>
-            <label class="space"></label>
-            <div class="col-xl-4 col-m-12">
-            <label class="hint-label">8<input class="hint-input" value="P" /></label>
-            <label class="hint-label">9 <input class="hint-input" value="R" /></label>
-            <label class="hint-label">10 <input class="hint-input" value="I" /></label>
-            <label class="hint-label">11<input class="hint-input" value="N" /></label>
-            <label class="hint-label">3<input class="hint-input" value="T" /></label>
-            <label class="hint-label">12 <input class="hint-input" value="L" /></label>
-            <label class="hint-label">11<input class="hint-input" value="N" /></label>
-          </div>
-          <label class="col-xl-4 col-m-12">
-            <label class="hint-label">13<input class="hint-input" value="H" /></label>
-            <label class="hint-label">4<input class="hint-input" value="E" /></label>
-            <label class="hint-label">12<input class="hint-input" value="L" /></label>
-            <label class="hint-label">12<input class="hint-input" value="L" /></label>
-            <label class="hint-label">6<input class="hint-input" value="O" /></label>
-          </label>
-            <label class="space"></label>
-            <label class="col-xl-4 col-m-12">
-            <label class="hint-label">14<input class="hint-input" value="W" /></label>
-            <label class="hint-label">6<input class="hint-input" value="O" /></label>
-            <label class="hint-label">9<input class="hint-input" value="R" /></label>
-            <label class="hint-label">12<input class="hint-input" value="L" /></label>
-            <label class="hint-label">15<input class="hint-input" value="D" /></label>
-          </label>
+
+  <!-- How to Play -->
+  <div class="modal fade" id="tutorial-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title fw-bold">How to play</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        
+        <div class="modal-body">
+          <p>&ensp;&ensp;ในแต่ละข้อจะมีคำใบ้ภาษาไทยพร้อมกับชุดตัวเลข ให้ผู้เล่นใส่ตัวอักษรตามคำตอบของข้อนั้นๆ
+            และดูว่าตัวเลขแต่ละตัวแทนตัวอักษรอะไร โดยที่จะต้องตอบเป็นภาษาอังกฤษเท่านั้น
+          </p>
+          <p>&ensp;&ensp;ซึ่ง “ 1 ตัวเลขแทนตัวอักษรภาษาอังกฤษ 1ตัว ” ในบางข้ออาจมีตัวอักษรถูกใส่ไว้อยู่แล้ว
+            ตัวอักษรเหล่านั้นจะไม่ถูกใช้ในคำตอบสุดท้าย เป็นเพียงคำใบ้เท่านั้น ในส่วนคำตอบสุดท้ายให้นำตัวอักษรที่ได้
+            มาพิมพ์เรียงตามชุดตัวเลขของโจทย์
+          </p>
+          <hr>
+          <p class="text-danger">&ensp;* ถ้าหากใช้หน้าจอมือถือแล้วอ่านยาก / มีปัญหาการเว้นบรรทัดแปลกๆ จนคำขาด
+            <b class="text-decoration-underline">ให้ลองใช้หน้าจอในแนวนอน</b> *
+          </p>
+          <hr>
+          <p class="text-danger">&ensp;* ถ้าหากเข้าเว็ปไซต์นี้จากไลน์ <b class="text-decoration-underline">กรุณาเข้าใน
+              Browser โดยตรง</b> (เช่น Google Chrome,
+            Safari, Microsoft Edge, Firefox, Opera ฯลฯ) เพื่อให้สามารถ Copy คำตอบสุดท้ายได้ *
+          </p>
+          <p>
+            &ensp;&ensp;สามารถทำได้โดยกดปุ่ม 3 จุดด้านขวาล่าง แล้วกดปุ่ม Open in your default browser / Open in browser
+            / เปิดด้วยเบราว์เซอร์เริ่มต้น / เปิดในเบราว์เซอร์
+          </p>
+        </div>
       </div>
-      <div class="row">
-        <input type="button" value="คัดลอกคำตอบ">
-        <input type="button" value="ส่งคำตอบ">
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="blue-background p-5">
+    <i class="tutorial-button fa fa-question-circle fa-2x float-end" aria-hidden="true" data-bs-toggle="modal"
+      data-bs-target="#tutorial-modal"></i>
+    <h1 class="fw-bold mb-3">คำตอบสุดท้าย</h1>
+    <form action="#">
+      <div class="ans-block row mx-md-5 mx-0">
+        <div class="col-xxl-4 col-xl-5 col-lg-7 col-md-12">
+          <label class="hint-label">1<input id="ans-1" class="hint-input index-1" maxlength="1"
+              onkeyup="changeData(1,this.value)" /></label>
+          <label class="hint-label">2 <input id="ans-2" class="hint-input index-2" maxlength="1"
+              onkeyup="changeData(2,this.value)" /></label>
+          <label class="hint-label">1 <input id="ans-3" class="hint-input index-1" maxlength="1"
+              onkeyup="changeData(1,this.value)" /></label>
+          <label class="hint-label">3<input id="ans-4" class="hint-input index-3" maxlength="1"
+              onkeyup="changeData(3,this.value)" /></label>
+          <label class="hint-label">4 <input id="ans-5" class="hint-input index-4" maxlength="1"
+              onkeyup="changeData(4,this.value)" /></label>
+          <label class="hint-label">5 <input id="ans-6" class="hint-input index-5" maxlength="1"
+              onkeyup="changeData(5,this.value)" /></label>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-12">
+          <label class="hint-label">6<input id="ans-8" class="hint-input index-6" maxlength="1"
+              onkeyup="changeData(6,this.value)" /></label>
+          <label class="hint-label">7 <input id="ans-9" class="hint-input index-7" maxlength="1"
+              onkeyup="changeData(7,this.value)" /></label>
+          <label class="hint-label">3 <input id="ans-10" class="hint-input index-3" maxlength="1"
+              onkeyup="changeData(3,this.value)" /></label>
+        </div>
+        <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-12">
+          <label class="hint-label">8<input id="ans-12" class="hint-input index-8" maxlength="1"
+              onkeyup="changeData(8,this.value)" /></label>
+          <label class="hint-label">9 <input id="ans-13" class="hint-input index-9" maxlength="1"
+              onkeyup="changeData(9,this.value)" /></label>
+          <label class="hint-label">10 <input id="ans-14" class="hint-input index-10" maxlength="1"
+              onkeyup="changeData(10,this.value)" /></label>
+          <label class="hint-label">11<input id="ans-15" class="hint-input index-11" maxlength="1"
+              onkeyup="changeData(11,this.value)" /></label>
+          <label class="hint-label">3<input id="ans-16" class="hint-input index-3" maxlength="1"
+              onkeyup="changeData(3,this.value)" /></label>
+          <label class="hint-label">12 <input id="ans-17" class="hint-input index-12" maxlength="1"
+              onkeyup="changeData(12,this.value)" /></label>
+          <label class="hint-label">11<input id="ans-18" class="hint-input index-11" maxlength="1"
+              onkeyup="changeData(11,this.value)" /></label>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-12">
+          <label class="hint-label">13<input id="ans-20" class="hint-input index-13" maxlength="1"
+              onkeyup="changeData(13,this.value)" /></label>
+          <label class="hint-label">4<input id="ans-21" class="hint-input index-4" maxlength="1"
+              onkeyup="changeData(4,this.value)" /></label>
+          <label class="hint-label">12<input id="ans-22" class="hint-input index-12" maxlength="1"
+              onkeyup="changeData(12,this.value)" /></label>
+          <label class="hint-label">12<input id="ans-23" class="hint-input index-12" maxlength="1"
+              onkeyup="changeData(12,this.value)" /></label>
+          <label class="hint-label">6<input id="ans-24" class="hint-input index-6" maxlength="1"
+              onkeyup="changeData(6,this.value)" /></label>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-12">
+          <label class="hint-label">14<input id="ans-26" class="hint-input index-14" maxlength="1"
+              onkeyup="changeData(14,this.value)" /></label>
+          <label class="hint-label">6<input id="ans-27" class="hint-input index-6" maxlength="1"
+              onkeyup="changeData(6,this.value)" /></label>
+          <label class="hint-label">9<input id="ans-28" class="hint-input index-9" maxlength="1"
+              onkeyup="changeData(9,this.value)" /></label>
+          <label class="hint-label">12<input id="ans-29" class="hint-input index-12" maxlength="1"
+              onkeyup="changeData(12,this.value)" /></label>
+          <label class="hint-label">15<input id="ans-30" class="hint-input index-15" maxlength="1"
+              onkeyup="changeData(15,this.value)" /></label>
+        </div>
+      </div>
+      <div class="row pt-3 px-3 px-md-5">
+        <button id="copy-ans-btn" class="btn btn-dark mb-2" onclick="copyAnswer()">คัดลอกคำตอบ</button>
+        <a role="button" class="btn btn-dark" href="https://forms.gle/vLtipLZ6B6vFhdA6A" target="_blank">ส่งคำตอบ</a>
       </div>
     </form>
   </div>
 
-
-  <div class="container white-background">
-    <div class="col-xl-4 col-m-12"></div>
-    <fieldset class="row2">
-      <p>ระบบตัวเลขที่ประกอบด้วย 2 ค่าคือ 0 และ 1 ซึ่งใช้ในการคำนวณในระบบคอมพิวเตอร์</p>
+  <!-- Hint -->
+  <div class="container white-background p-5">
+    <fieldset class="text-center">
+      <h5 class="mb-4">1. ระบบตัวเลขที่ประกอบด้วย 2 ค่าคือ 0 และ 1 ซึ่งใช้ในการคำนวณในระบบคอมพิวเตอร์</h5>
       <form id="hint1" class="ms-4">
         <label class="hint-label"><input class="hint-input" value="B" disabled /></label>
-        <label class="hint-label">10 <input class="hint-input" value="I" /></label>
-        <label class="hint-label">11 <input class="hint-input" value="N" /></label>
-        <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
-        <label class="hint-label">9 <input class="hint-input" value="R" /></label>
-        <label class="hint-label">2 <input class="hint-input" value="Y" /></label>
+        <label class="hint-label">10 <input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">11 <input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input " value="A" disabled /></label>
+        <label class="hint-label">9 <input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">2 <input class="hint-input index-2" maxlength="1"
+            onkeyup="changeData(2,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>เช่น Monitor, Printer, Headphones, Speakers, Projector, GPS,
-        Speech-Generating Device</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">2. เช่น Monitor, Printer, Headphones, Speakers, Projector, GPS,
+        Speech-Generating Device</h5>
       <form id="hint2" class="ms-4">
-        <label class="hint-label">6<input class="hint-input" value="O" /></label>
-        <label class="hint-label">8<input class="hint-input" value="U" /></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">7<input class="hint-input" value="P" /></label>
-        <label class="hint-label">8<input class="hint-input" value="U" /></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-=======
-    <!-- How to Play -->
-    <div class="modal fade" id="tutorial-modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">How to play</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>This is how to play. <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor rem
-                        rerum dolore
-                        est ut distinctio assumenda, architecto quis. Eos sit accusamus est dignissimos eaque optio id
-                        natus facere,
-                        nemo officiis?</p>
-                </div>
-            </div>
-        </div>
->>>>>>> 3b45a0aeb055c73813d244d326c370b0f8adbb18
-    </div>
-
-<<<<<<< HEAD
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>การปกป้องระบบคอมพิวเตอร์, เครือข่าย network หรือโปรแกรมจากการโจมตีทาง digital เช่น
-        การขโมยข้อมูล, การก่อกวนการทำงานของระบบ, การทำลายข้อมูล เป็นต้น</p>
-        <form id="hint3" class="ms-4">
-        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
-        <label class="hint-label">2<input class="hint-input" value="Y" /></label>
-        <label class="hint-label"><input class="hint-input" value="B" disabled/></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">1<input class="hint-input" value="S" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
-        <label class="hint-label">7<input class="hint-input" value="U" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">2<input class="hint-input" value="Y" /></label>
-        </form>
-      </div>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
+            onkeyup="changeData(7,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">8<input class="hint-input index-8" maxlength="1"
+            onkeyup="changeData(7,this.value)" /></label>
+        <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
+            onkeyup="changeData(8,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>ประเภทข้อมูลประเภทข้อความหรือการนำตัวอักษรหลายๆ ตัวมาต่อกันหรือเรียกว่าอาเรย์ของตัวอักษร</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">3.การปกป้องระบบคอมพิวเตอร์, เครือข่าย network หรือโปรแกรมจากการโจมตีทาง digital เช่น
+        การขโมยข้อมูล, การก่อกวนการทำงานของระบบ, การทำลายข้อมูล เป็นต้น</h5>
+      <form id="hint3" class="ms-4">
+        <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
+        <label class="hint-label">2<input class="hint-input index-2" maxlength="1"
+            onkeyup="changeData(2,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="B" disabled /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
+            onkeyup="changeData(1,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
+        <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
+            onkeyup="changeData(7,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">2<input class="hint-input index-2" maxlength="1"
+            onkeyup="changeData(2,this.value)" /></label>
+      </form>
+    </fieldset>
+
+    <fieldset class="text-center">
+      <h5 class="mb-4">4. ประเภทข้อมูลประเภทข้อความหรือการนำตัวอักษรหลายๆ ตัวมาต่อกันหรือเรียกว่าอาเรย์ของตัวอักษร</h5>
       <form id="hint4" class="ms-4">
-        <label class="hint-label">1<input class="hint-input" value="S" /></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label">11<input class="hint-input" value="N" /></label>
-        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
+        <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
+            onkeyup="changeData(1,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input index-" value="G" disabled /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>ข้อมูลประเภท Boolean ประกอบด้วย 2 ค่าคือ ____ และ False</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">5. ข้อมูลประเภท Boolean ประกอบด้วย 2 ค่าคือ ____ และ False</h5>
       <form id="hint5" class="ms-4">
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">7<input class="hint-input" value="U" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
+            onkeyup="changeData(7,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>ลึกลับ, ยากหรือเป็นไปไม่ได้ที่อธิบาย</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">6. ลึกลับ, ยากหรือเป็นไปไม่ได้ที่อธิบาย</h5>
       <form id="hint6" class="ms-4">
-        <label class="hint-label">5<input class="hint-input" value="M" /></label>
-        <label class="hint-label">2<input class="hint-input" value="Y" /></label>
-        <label class="hint-label">1<input class="hint-input" value="S" /></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label">6<input class="hint-input" value="O" /></label>
-        <label class="hint-label">7<input class="hint-input" value="U" /></label>
-        <label class="hint-label">1<input class="hint-input" value="S" /></label>
+        <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
+            onkeyup="changeData(5,this.value)" /></label>
+        <label class="hint-label">2<input class="hint-input index-2" maxlength="1"
+            onkeyup="changeData(2,this.value)" /></label>
+        <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
+            onkeyup="changeData(1,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
+            onkeyup="changeData(7,this.value)" /></label>
+        <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
+            onkeyup="changeData(1,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>คนที่ปลอมเป็นคนอื่น, นักต้มตุ๋น</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">7. คนที่ปลอมเป็นคนอื่น, นักต้มตุ๋น</h5>
       <form id="hint7" class="ms-4">
-        <label class="hint-label">4<input class="hint-input" value="I" /></label>
-        <label class="hint-label">5<input class="hint-input" value="M" /></label>
-        <label class="hint-label">6<input class="hint-input" value="P" /></label>
-        <label class="hint-label">8<input class="hint-input" value="O" /></label>
-        <label class="hint-label">1<input class="hint-input" value="S" /></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
+            onkeyup="changeData(5,this.value)" /></label>
+        <label class="hint-label">8<input class="hint-input index-8" maxlength="1"
+            onkeyup="changeData(8,this.value)" /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
+            onkeyup="changeData(1,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>การขีดเส้นใต้ข้อความที่เลือก</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">8. การขีดเส้นใต้ข้อความที่เลือก</h5>
       <form id="hint8" class="ms-4">
-        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">12<input class="hint-input" value="L" /></label>
-        <label class="hint-label"><input class="hint-input" value="+" disabled/></label>
-        <label class="hint-label">7<input class="hint-input" value="U" /></label>
+        <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
+            onkeyup="changeData(12,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="+" disabled /></label>
+        <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
+            onkeyup="changeData(7,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>บุคคลที่ทำหน้าที่เขียนซอฟต์แวร์ต่างๆ (Software) หรือเขียนโปรแกรมเพื่อสั่งงานให้เครื่องคอมพิวเตอร์
-        ทำงานตามความต้องการของผู้ใช้ โดยเขียนตามแผนผังที่นักวิเคราะห์ระบบได้เขียนไว้</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">9. บุคคลที่ทำหน้าที่เขียนซอฟต์แวร์ต่างๆ (Software)
+        หรือเขียนโปรแกรมเพื่อสั่งงานให้เครื่องคอมพิวเตอร์
+        ทำงานตามความต้องการของผู้ใช้ โดยเขียนตามแผนผังที่นักวิเคราะห์ระบบได้เขียนไว้</h5>
       <form id="hint9" class="ms-4">
-        <label class="hint-label">8<input class="hint-input" value="P" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">6<input class="hint-input" value="O" /></label>
-        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
-        <label class="hint-label">5<input class="hint-input" value="M" /></label>
-        <label class="hint-label">5<input class="hint-input" value="M" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
+        <label class="hint-label">8<input class="hint-input index-8" maxlength="1"
+            onkeyup="changeData(8,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
+        <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
+            onkeyup="changeData(5,this.value)" /></label>
+        <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
+            onkeyup="changeData(5,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>ที่อยู่ของเว็บไซต์, จะเริ่มด้วยการพิมพ์คำหน้า www. และจบด้วย .com</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">10. ที่อยู่ของเว็บไซต์, จะเริ่มด้วยการพิมพ์คำหน้า www. และจบด้วย .com</h5>
       <form id="hint10" class="ms-4">
-        <label class="hint-label">7<input class="hint-input" value="U" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">12<input class="hint-input" value="L" /></label>
+        <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
+            onkeyup="changeData(7,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
+            onkeyup="changeData(12,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>หรือ ผังงาน เป็นเครื่องมือแสดงขั้นตอน หรือกระบวนการทำงานที่กระชับ เข้าใจง่าย</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">11. รูปภาพหรือสัญลักษณ์ที่ใช้เขียนแทนขั้นตอน คำอธิบาย ข้อความหรือคำพูด ที่ใช้ในอัลกอริทึม</h5>
       <form id="hint11" class="ms-4">
-        <label class="hint-label"><input class="hint-input" value="F" disabled/></label>
-        <label class="hint-label">12<input class="hint-input" value="L" /></label>
-        <label class="hint-label">6<input class="hint-input" value="O" /></label>
-        <label class="hint-label">14<input class="hint-input" value="W" /></label>
-        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
-        <label class="hint-label">13<input class="hint-input" value="H" /></label>
-        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">2<input class="hint-input" value="T" /></label>
+        <label class="hint-label"><input class="hint-input" value="F" disabled /></label>
+        <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
+            onkeyup="changeData(12,this.value)" /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label">14<input class="hint-input index-14" maxlength="1"
+            onkeyup="changeData(14,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
+        <label class="hint-label">13<input class="hint-input index-13" maxlength="1"
+            onkeyup="changeData(13,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>เอกเทคโนโลยีสารสนเทศ</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">12. เอกเทคโนโลยีสารสนเทศ</h5>
       <form id="hint12" class="ms-4">
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label">11<input class="hint-input" value="N" /></label>
-        <label class="hint-label"><input class="hint-input" value="F" disabled/></label>
-        <label class="hint-label">6<input class="hint-input" value="R" /></label>
-        <label class="hint-label">9<input class="hint-input" value="O" /></label>
-        <label class="hint-label">5<input class="hint-input" value="M" /></label>
-        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label">6<input class="hint-input" value="O" /></label>
-        <label class="hint-label">11<input class="hint-input" value="N" /></label>
-      </div>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="F" disabled /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
+            onkeyup="changeData(5,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
         <div></div>
-        <div class="col-xl-4 col-m-12">
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
-        <label class="hint-label">13<input class="hint-input" value="H" /></label>
-        <label class="hint-label">11<input class="hint-input" value="N" /></label>
-        <label class="hint-label">6<input class="hint-input" value="O" /></label>
-        <label class="hint-label">12<input class="hint-input" value="L" /></label>
-        <label class="hint-label">6<input class="hint-input" value="O" /></label>
-        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
-        <label class="hint-label">2<input class="hint-input" value="Y" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
+        <label class="hint-label">13<input class="hint-input index-13" maxlength="1"
+            onkeyup="changeData(13,this.value)" /></label>
+        <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
+            onkeyup="changeData(12,this.value)" /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
+        <label class="hint-label">2<input class="hint-input index-2" maxlength="1"
+            onkeyup="changeData(2,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>เอกวิศวกรรมดิจิทัล</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">13. เอกวิศวกรรมดิจิทัล</h5>
       <form id="hint13" class="ms-4">
-        <label class="hint-label">15<input class="hint-input" value="D" /></label>
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
-        <label class="hint-label">12<input class="hint-input" value="L" /></label>
-      </div>
+        <label class="hint-label">15<input class="hint-input index-15" maxlength="1"
+            onkeyup="changeData(15,this.value)" /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
+        <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
+            onkeyup="changeData(12,this.value)" /></label>
         <div></div>
-        <div class="col-xl-4 col-m-12">
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label">11<input class="hint-input" value="N" /></label>
-        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label">11<input class="hint-input" value="N" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label">11<input class="hint-input" value="N" /></label>
-        <label class="hint-label"><input class="hint-input" value="G" disabled/></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>ซอฟต์แวร์เพื่อการสื่อสาร ประชุม พูดคุย ติดต่อกัน (ซอฟต์แวร์ที่เด็กปสม.ใช้เรียนออนไลน์)</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">14. ซอฟต์แวร์เพื่อการสื่อสาร ประชุม พูดคุย ติดต่อกัน (ซอฟต์แวร์ที่เด็กปสม.ใช้เรียนออนไลน์)</h5>
       <form id="hint14" class="ms-4">
-      <label class="hint-label">5<input class="hint-input" value="M" /></label>
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label"><input class="hint-input" value="C" disabled/></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">6<input class="hint-input" value="O" /></label>
-        <label class="hint-label">1<input class="hint-input" value="S" /></label>
-        <label class="hint-label">6<input class="hint-input" value="O" /></label>
-        <label class="hint-label"><input class="hint-input" value="F" disabled/></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-      </div>
+        <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
+            onkeyup="changeData(5,this.value)" /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
+            onkeyup="changeData(1,this.value)" /></label>
+        <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
+            onkeyup="changeData(6,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="F" disabled /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
         <div></div>
-        <div class="col-xl-4 col-m-12">
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label"><input class="hint-input" value="A" disabled/></label>
-        <label class="hint-label">1<input class="hint-input" value="M" /></label>
-        <label class="hint-label">5<input class="hint-input" value="S" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
+        <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
+            onkeyup="changeData(1,this.value)" /></label>
+        <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
+            onkeyup="changeData(5,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
 
-    <fieldset class="row2">
-      <div class="col-xl-4 col-m-12">
-      <p>เครือข่ายคอมพิวเตอร์ที่มีขนาดใหญ่ที่สุด</p>
+    <fieldset class="text-center">
+      <h5 class="mb-4">15. เครือข่ายคอมพิวเตอร์ที่มีขนาดใหญ่ที่สุด</h5>
       <form id="hint15" class="ms-4">
-        <label class="hint-label">10<input class="hint-input" value="I" /></label>
-        <label class="hint-label">11<input class="hint-input" value="N" /></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label">9<input class="hint-input" value="R" /></label>
-        <label class="hint-label">11<input class="hint-input" value="N" /></label>
-        <label class="hint-label">4<input class="hint-input" value="E" /></label>
-        <label class="hint-label">3<input class="hint-input" value="T" /></label>
+        <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
+            onkeyup="changeData(10,this.value)" /></label>
+        <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
+            onkeyup="changeData(9,this.value)" /></label>
+        <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
+            onkeyup="changeData(11,this.value)" /></label>
+        <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
+            onkeyup="changeData(4,this.value)" /></label>
+        <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
+            onkeyup="changeData(3,this.value)" /></label>
       </form>
-    </div>
     </fieldset>
-=======
-    <!-- Header -->
-    <div class="blue-background p-5">
-        <i class="tutorial-button fa fa-question-circle fa-2x float-end" aria-hidden="true" data-bs-toggle="modal"
-            data-bs-target="#tutorial-modal"></i>
-        <h1>คำตอบสุดท้าย</h1>
-        <form action="#">
-            <div class="row-row">
-                <label class="hint-label">1<input id="ans-1" class="hint-input index-1" maxlength="1"
-                        onkeyup="changeData(1,this.value)" /></label>
-                <label class="hint-label">2 <input id="ans-2" class="hint-input index-2" maxlength="1"
-                        onkeyup="changeData(2,this.value)" /></label>
-                <label class="hint-label">1 <input id="ans-3" class="hint-input index-1" maxlength="1"
-                        onkeyup="changeData(1,this.value)" /></label>
-                <label class="hint-label">3<input id="ans-4" class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">4 <input id="ans-5" class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">5 <input id="ans-6" class="hint-input index-5" maxlength="1"
-                        onkeyup="changeData(5,this.value)" /></label>
-                <label class="space"></label>
-                <label class="hint-label">6<input id="ans-8" class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">7 <input id="ans-9" class="hint-input index-7" maxlength="1"
-                        onkeyup="changeData(7,this.value)" /></label>
-                <label class="hint-label">3 <input id="ans-10" class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="space"></label>
-                <label class="hint-label">8<input id="ans-12" class="hint-input index-8" maxlength="1"
-                        onkeyup="changeData(8,this.value)" /></label>
-                <label class="hint-label">9 <input id="ans-13" class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">10 <input id="ans-14" class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">11<input id="ans-15" class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label">3<input id="ans-16" class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">12 <input id="ans-17" class="hint-input index-12" maxlength="1"
-                        onkeyup="changeData(12,this.value)" /></label>
-                <label class="hint-label">11<input id="ans-18" class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <div></div>
-                <label class="hint-label">13<input id="ans-20" class="hint-input index-13" maxlength="1"
-                        onkeyup="changeData(13,this.value)" /></label>
-                <label class="hint-label">4<input id="ans-21" class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">12<input id="ans-22" class="hint-input index-12" maxlength="1"
-                        onkeyup="changeData(12,this.value)" /></label>
-                <label class="hint-label">12<input id="ans-23" class="hint-input index-12" maxlength="1"
-                        onkeyup="changeData(12,this.value)" /></label>
-                <label class="hint-label">6<input id="ans-24" class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="space"></label>
-                <label class="hint-label">14<input id="ans-26" class="hint-input index-14" maxlength="1"
-                        onkeyup="changeData(14,this.value)" /></label>
-                <label class="hint-label">6<input id="ans-27" class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">9<input id="ans-28" class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">12<input id="ans-29" class="hint-input index-12" maxlength="1"
-                        onkeyup="changeData(12,this.value)" /></label>
-                <label class="hint-label">15<input id="ans-30" class="hint-input index-15" maxlength="1"
-                        onkeyup="changeData(15,this.value)" /></label>
-            </div>
-            <div class="row">
-                <button id="copy-ans-btn" class="btn btn-dark mb-2" onclick="copyAnswer()">คัดลอกคำตอบ</button>
-                <a role="button" class="btn btn-dark" href="https://forms.gle/vLtipLZ6B6vFhdA6A"
-                    target="_blank">ส่งคำตอบ</a>
-            </div>
-        </form>
-    </div>
-
-    <!-- Hint -->
-    <div class="container white-background">
-        <fieldset class="row2">
-            <p>ระบบตัวเลขที่ประกอบด้วย 2 ค่าคือ 0 และ 1 ซึ่งใช้ในการคำนวณในระบบคอมพิวเตอร์</p>
-            <form id="hint1" class="ms-4">
-                <label class="hint-label"><input class="hint-input" value="B" disabled /></label>
-                <label class="hint-label">10 <input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">11 <input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input " value="A" disabled /></label>
-                <label class="hint-label">9 <input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">2 <input class="hint-input index-2" maxlength="1"
-                        onkeyup="changeData(2,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>เช่น Monitor, Printer, Headphones, Speakers, Projector, GPS,
-                Speech-Generating Device</p>
-            <form id="hint2" class="ms-4">
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
-                        onkeyup="changeData(7,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">8<input class="hint-input index-8" maxlength="1"
-                        onkeyup="changeData(7,this.value)" /></label>
-                <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
-                        onkeyup="changeData(8,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>การปกป้องระบบคอมพิวเตอร์, เครือข่าย network หรือโปรแกรมจากการโจมตีทาง digital เช่น
-                การขโมยข้อมูล, การก่อกวนการทำงานของระบบ, การทำลายข้อมูล เป็นต้น</p>
-            <form id="hint3" class="ms-4">
-                <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
-                <label class="hint-label">2<input class="hint-input index-2" maxlength="1"
-                        onkeyup="changeData(2,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="B" disabled /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
-                        onkeyup="changeData(1,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
-                <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
-                        onkeyup="changeData(7,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">2<input class="hint-input index-2" maxlength="1"
-                        onkeyup="changeData(2,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>ประเภทข้อมูลประเภทข้อความหรือการนำตัวอักษรหลายๆ ตัวมาต่อกันหรือเรียกว่าอาเรย์ของตัวอักษร</p>
-            <form id="hint4" class="ms-4">
-                <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
-                        onkeyup="changeData(1,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input index-" value="G" disabled /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>ข้อมูลประเภท Boolean ประกอบด้วย 2 ค่าคือ ____ และ False</p>
-            <form id="hint5" class="ms-4">
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
-                        onkeyup="changeData(7,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>ลึกลับ, ยากหรือเป็นไปไม่ได้ที่อธิบาย</p>
-            <form id="hint6" class="ms-4">
-                <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
-                        onkeyup="changeData(5,this.value)" /></label>
-                <label class="hint-label">2<input class="hint-input index-2" maxlength="1"
-                        onkeyup="changeData(2,this.value)" /></label>
-                <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
-                        onkeyup="changeData(1,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
-                        onkeyup="changeData(7,this.value)" /></label>
-                <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
-                        onkeyup="changeData(1,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>คนที่ปลอมเป็นคนอื่น, นักต้มตุ๋น</p>
-            <form id="hint7" class="ms-4">
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
-                        onkeyup="changeData(5,this.value)" /></label>
-                <label class="hint-label">8<input class="hint-input index-8" maxlength="1"
-                        onkeyup="changeData(8,this.value)" /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
-                        onkeyup="changeData(1,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>การขีดเส้นใต้ข้อความที่เลือก</p>
-            <form id="hint8" class="ms-4">
-                <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
-                        onkeyup="changeData(12,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="+" disabled /></label>
-                <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
-                        onkeyup="changeData(7,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>บุคคลที่ทำหน้าที่เขียนซอฟต์แวร์ต่างๆ (Software) หรือเขียนโปรแกรมเพื่อสั่งงานให้เครื่องคอมพิวเตอร์
-                ทำงานตามความต้องการของผู้ใช้ โดยเขียนตามแผนผังที่นักวิเคราะห์ระบบได้เขียนไว้</p>
-            <form id="hint9" class="ms-4">
-                <label class="hint-label">8<input class="hint-input index-8" maxlength="1"
-                        onkeyup="changeData(8,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
-                <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
-                        onkeyup="changeData(5,this.value)" /></label>
-                <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
-                        onkeyup="changeData(5,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>ที่อยู่ของเว็บไซต์, จะเริ่มด้วยการพิมพ์คำหน้า www. และจบด้วย .com</p>
-            <form id="hint10" class="ms-4">
-                <label class="hint-label">7<input class="hint-input index-7" maxlength="1"
-                        onkeyup="changeData(7,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
-                        onkeyup="changeData(12,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>รูปภาพหรือสัญลักษณ์ที่ใช้เขียนแทนขั้นตอน คำอธิบาย ข้อความหรือคำพูด ที่ใช้ในอัลกอริทึม</p>
-            <form id="hint11" class="ms-4">
-                <label class="hint-label"><input class="hint-input" value="F" disabled /></label>
-                <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
-                        onkeyup="changeData(12,this.value)" /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">14<input class="hint-input index-14" maxlength="1"
-                        onkeyup="changeData(14,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
-                <label class="hint-label">13<input class="hint-input index-13" maxlength="1"
-                        onkeyup="changeData(13,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>เอกเทคโนโลยีสารสนเทศ</p>
-            <form id="hint12" class="ms-4">
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="F" disabled /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
-                        onkeyup="changeData(5,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <div></div>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
-                <label class="hint-label">13<input class="hint-input index-13" maxlength="1"
-                        onkeyup="changeData(13,this.value)" /></label>
-                <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
-                        onkeyup="changeData(12,this.value)" /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
-                <label class="hint-label">2<input class="hint-input index-2" maxlength="1"
-                        onkeyup="changeData(2,this.value)" /></label>
-            </form>
-        </fieldset>
->>>>>>> 3b45a0aeb055c73813d244d326c370b0f8adbb18
-
-        <fieldset class="row2">
-            <p>เอกวิศวกรรมดิจิทัล</p>
-            <form id="hint13" class="ms-4">
-                <label class="hint-label">15<input class="hint-input index-15" maxlength="1"
-                        onkeyup="changeData(15,this.value)" /></label>
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
-                <label class="hint-label">12<input class="hint-input index-12" maxlength="1"
-                        onkeyup="changeData(12,this.value)" /></label>
-                <div></div>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="G" disabled /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>ซอฟต์แวร์เพื่อการสื่อสาร ประชุม พูดคุย ติดต่อกัน (ซอฟต์แวร์ที่เด็กปสม.ใช้เรียนออนไลน์)</p>
-            <form id="hint14" class="ms-4">
-                <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
-                        onkeyup="changeData(5,this.value)" /></label>
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="C" disabled /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
-                        onkeyup="changeData(1,this.value)" /></label>
-                <label class="hint-label">6<input class="hint-input index-6" maxlength="1"
-                        onkeyup="changeData(6,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="F" disabled /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <div></div>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label"><input class="hint-input" value="A" disabled /></label>
-                <label class="hint-label">1<input class="hint-input index-1" maxlength="1"
-                        onkeyup="changeData(1,this.value)" /></label>
-                <label class="hint-label">5<input class="hint-input index-5" maxlength="1"
-                        onkeyup="changeData(5,this.value)" /></label>
-            </form>
-        </fieldset>
-
-        <fieldset class="row2">
-            <p>เครือข่ายคอมพิวเตอร์ที่มีขนาดใหญ่ที่สุด</p>
-            <form id="hint15" class="ms-4">
-                <label class="hint-label">10<input class="hint-input index-10" maxlength="1"
-                        onkeyup="changeData(10,this.value)" /></label>
-                <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">9<input class="hint-input index-9" maxlength="1"
-                        onkeyup="changeData(9,this.value)" /></label>
-                <label class="hint-label">11<input class="hint-input index-11" maxlength="1"
-                        onkeyup="changeData(11,this.value)" /></label>
-                <label class="hint-label">4<input class="hint-input index-4" maxlength="1"
-                        onkeyup="changeData(4,this.value)" /></label>
-                <label class="hint-label">3<input class="hint-input index-3" maxlength="1"
-                        onkeyup="changeData(3,this.value)" /></label>
-            </form>
-        </fieldset>
-    </div>
+  </div>
 </body>
 
 </html>
