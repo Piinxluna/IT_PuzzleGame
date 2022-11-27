@@ -7,7 +7,8 @@ function changeData(index, data) {
     inputBox[i].value = data;
   }
   disableCopyAnsButton(false);
-  //   console.log("index-" + index, data);
+
+  // console.log("index-" + index, data);
 }
 
 function copyAnswer() {
