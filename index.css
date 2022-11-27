@@ -13,6 +13,15 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
+.tutorial-button {
+  cursor: pointer;
+}
+
+.tutorail-block {
+  background-color: aquamarine;
+  display: none;
+}
+
 .hint-input {
   text-align: center;
   display: inline-block;
